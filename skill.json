@@ -1,0 +1,25 @@
+{
+  "name": "genpark-personal-agent-intermittent-fasting-autophagy-window-skill",
+  "version": "1.0.0",
+  "description": "Models hepatic glycogen depletion, serum ketone kinetics, cellular autophagy activation, and circadian eating windows.",
+  "tools": [
+    {
+      "name": "calculate_autophagy_metabolic_phase",
+      "description": "Calculates metabolic phase, hepatic glycogen depletion, ketones, and autophagy index during fasting.",
+      "parameters": {
+        "fasting_duration_hours": "float",
+        "prior_meal_carb_grams": "float (optional, default 60.0)",
+        "exercise_met_hours": "float (optional, default 1.0)"
+      }
+    },
+    {
+      "name": "optimize_eating_window",
+      "description": "Calculates optimal start and end times for daily feeding window aligned with circadian biology.",
+      "parameters": {
+        "target_fast_hours": "float (optional, default 16.0)",
+        "bedtime_hour": "float (optional, default 23.0)",
+        "wake_hour": "float (optional, default 7.0)"
+      }
+    }
+  ]
+}
